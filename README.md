@@ -5,31 +5,46 @@
 |**Name:**                      | Santosh Neupane       |
 |**Student ID:**                |110700078              |                 
 |**Class:**                     |  CSC 2312 Section 003 |
-|**Homework:**                  |  #1                   |
-|**Due Date:**                  |  Sep. 09, 2022        |
-
-
+|**Homework:**                  |  #2                   |
+|**Due Date:**                  |  Sep. 20, 2022        |
 
 #  Program Description
-1.This program recommends the user what activity to do in a certain day of the week.
-2.First it ask the user's name followed by weather condition and it ask for to enter the integer for the day starting at 0 for sunday.
-3.It then takes the input from the user and then recommends the activity to do on particular day.
-4. It uses while loop to get the correct input from the user. Loop continues until user enter right input. 
-5. It also uses If else statement to determine what to assign on activity on the particular day as the user's input.  
+1.First take input for initial balance and percent rate per year from the user.
+2.Have to make initial balance greater than or equal to minimum withdrawl amount $420.
+3.Then we have to calculate random withdrawl amount between $480 to $620 using rand function.
+4.After that we have to calculate interest amount for initial balance at that time using equation  where A is interest amount, P is the principal amount and r and t are rate and time respectively.
+5.Calculate new balance by subtracting withdrawl and adding interest in initial balance.
+6.Printing the values then update initial balance equal to new balance.
+7.End loop.
+8.End Program.
+
+
 
 # Source Files Description
 
 ## Name:  `main.cpp`
-Main program.  This is the driver program. It helps to recommend the user to choose the activity to do in the certain day entered by use according to 
-weather condition.
+Main program.  This is the driver program that calls sub-functions
+to read data from an input file, use the data to create two matrices,
+and compute and display their sum and product.
 
-## Name: makefile.txt
-   - It mainly helps to execute the file in csegrid.
+## Name:  `xxx.h` 
+   - if any
+   Contains the definition for the class xxx.  
+
+## Name: `xxx.cpp`
+   Defines and implements the xxx class for implementing a xxx.
+   This class provides routines to construct and get the xxx, ...
+
+**... more to come**
+   
 
 #  Circumstances of programs
    - The program runs successfully.  
    - The program was developed and tested on gnu g++ 6.1.x  It was compiled, run, and tested on gcc csegrid server.
-   - 
+
+   - The program runs mostly correct except for requirement #4 that the program aborts when a negative number is introduced.
+
+
 #  How to build and run the program
 - Applies for CSEGrid programs
 
@@ -40,19 +55,24 @@ weather condition.
    - The directory named `homework` should contain the following files:
    ```
       main.cpp
-      
+      xxx.h
+      xxx.cpp
+	   yyy.h
+	   yyy.cpp
       makefile
       Readme.md
-   
+   ```
+	[any other supporting documents]
 
 2. Build the program.
+
 - Change to the directory that contains the file by: 
-   - `% cd [hwk1]`
+   - `% cd [1234HW1]`
 - Compile the program by: 
    - `% make`
 
 3. Run the program by:
-   - `% ./homework1`
+   - `% ./[xxx]`
 
 4. Delete the obj files, executables, and core dump by
    - `% ./make clean`
